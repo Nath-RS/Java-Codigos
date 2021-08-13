@@ -5,7 +5,7 @@
  */
 package com.mycompany.exercicio5;
 
-import java.util.Date;
+
 import java.util.Scanner;
 
 /**

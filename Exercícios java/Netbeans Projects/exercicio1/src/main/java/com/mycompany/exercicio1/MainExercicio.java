@@ -23,7 +23,6 @@ public class MainExercicio {
        
        for(int i = 0;i < valoresvetor.length;i++){
            valoresvetor[i] = (int) Math.round(Math.random()*10);
-           int y = i -1;
            System.out.println(valoresvetor[i]);
            }
        valormaior = valoresvetor[0];

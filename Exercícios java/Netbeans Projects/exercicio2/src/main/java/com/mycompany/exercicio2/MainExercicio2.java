@@ -5,7 +5,6 @@
  */
 package com.mycompany.exercicio2;
 
-import java.util.Scanner;
 
 /**
  *
@@ -15,6 +14,8 @@ public class MainExercicio2 {
 
     /**
      * @param args the command line arguments
+     * 
+     * Exercicios
      */
     public static void main(String[] args) {
         int vetor[]= new int[5];
@@ -22,7 +23,6 @@ public class MainExercicio2 {
         
          for(int i = 0;i < vetor.length;i++){
            vetor[i] = (int) Math.round(Math.random()*10);
-           int y = i -1;
            if(vetor[i] % 2 == 0){
              acumulador = acumulador + vetor[i];  
            }
