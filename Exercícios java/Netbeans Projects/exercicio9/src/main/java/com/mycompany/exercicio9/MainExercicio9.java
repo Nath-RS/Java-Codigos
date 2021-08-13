@@ -25,23 +25,24 @@ public class MainExercicio9 {
     public static void main(String[] args) {
     int funcionarios = 15;
     int meses = 3;
-    int pontos_novembro[]= new int[funcionarios];
-    int pontos_dezembro[]= new int[funcionarios];
-    int pontos_janeiro[]= new int[funcionarios];
+    float pontos_novembro[]= new float[funcionarios];
+    float pontos_dezembro[]= new float[funcionarios];
+    float pontos_janeiro[]= new float[funcionarios];
     
     float media_pontos[]= new float[funcionarios];
-    int total_pontos[]= new int[funcionarios];
+    float total_pontos[]= new float[funcionarios];
     
     for(int i=0;i < funcionarios; i++){
-        pontos_novembro[i] =(int) Math.round(Math.random()*100);
-        pontos_dezembro[i] =(int) Math.round(Math.random()*150);
-        pontos_janeiro[i] =(int) Math.round(Math.random()*90);
+        pontos_novembro[i] =(float) Math.round(Math.random()*100);
+        pontos_dezembro[i] =(float) Math.round(Math.random()*150 + 5);
+        pontos_janeiro[i] = (float) Math.round(Math.random()*90 + 7);
         
         
     }
     //o total e a média parece não calcular corretamente. vou rerificar o que pode esta de errado.
+    
     for(int i=0;i<funcionarios; i++){
-        total_pontos[i] = Math.round(pontos_novembro[i] + pontos_dezembro[i] + pontos_janeiro[i]);
+        total_pontos[i] = pontos_novembro[i] + pontos_dezembro[i] + pontos_janeiro[i];
         media_pontos[i] = total_pontos[i] / meses;
     }
     System.out.print("\t\tNOVEMBRO\tDEZEMBRO\tJANEIRO\t\tMÉDIA\t\tTOTAL GERAL\n");  
@@ -49,10 +50,10 @@ public class MainExercicio9 {
     for(int i= 0;i < funcionarios;i++){
           System.out.print("Funcionário " + (i+1) + ":\t");
           System.out.print(pontos_novembro[i] + "\t\t");
-          System.out.print(pontos_novembro[i] + "\t\t");
-          System.out.print(pontos_novembro[i] + "\t\t");
+          System.out.print(pontos_dezembro[i] + "\t\t");
+          System.out.print(pontos_janeiro[i] + "\t\t");
           
-          System.out.print(Math.round(media_pontos[i]));
+          System.out.printf("%.2f",media_pontos[i]);
           System.out.print("\t\t" + total_pontos[i] + "\t\t\n");
       }
     }
