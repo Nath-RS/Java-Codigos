@@ -8,7 +8,6 @@ public class ExercicioPOO {
     public static void main(String[] args) {
         Produto p1,p2;
         ItemVenda venda1,venda2;
-        var n2;
         
         p1= new Produto(303,"capao",10.5f);
         p2= new Produto(303,"capao",10.5f);

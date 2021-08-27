@@ -59,12 +59,13 @@ public class Produto {
     }
     
     
-    private boolean equals(Produto obj){
+    public boolean equals(Produto obj){
     if(this.descricao == obj.descricao && this.valorUnitario == obj.valorUnitario){
         if(this.codigo == obj.codigo){
         return true;}
     }
     return false;    
     }
+    
     
 }
